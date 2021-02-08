@@ -1,0 +1,199 @@
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+section {
+  padding-right: 96px;
+  padding-left: 96px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.splash .splash-inner .btn {
+  display: inline-block;
+  min-width: 240px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-position: 100% 0;
+  background-size: 300%;
+  border-color: goldenrod;
+  color: white;
+  background-color: goldenrod;
+  text-align: center;
+  right: 45%;
+}
+
+/* Navigation */
+.navigation {
+  margin: 0 auto;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.navigation .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.navigation h3 {
+  color: goldenrod;
+  padding: 5px 10px 5px 15%;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 36px;
+  position: relative;
+  padding: 5px 10px 5px 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/* Splash */
+.splash {
+  height: 700px;
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Services */
+.services {
+  background-color: whitesmoke;
+}
+
+.services .container {
+  height: 100%;
+  width: 100%;
+}
+
+.services .serv-title {
+  padding-top: 72px;
+  text-align: center;
+}
+
+.services .serv-subtitle {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.services .serv-box {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 30px 72px 30px;
+}
+
+.services .serv-box .service {
+  padding: 20px;
+}
+
+.services .serv-box .service i {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: goldenrod;
+  border: solid 2px goldenrod;
+  border-radius: 50%;
+}
+
+/* Portfolio */
+.portfolio {
+  background-color: lightgray;
+}
+
+.portfolio .container {
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio .container .portf-title {
+  padding-top: 72px;
+  text-align: center;
+}
+
+.portfolio .container .portf-subtitle {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.portfolio .portfolio-box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio .portfolio-box .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.portfolio .portfolio-box .box-img {
+  width: 300px;
+  height: 400px;
+  background: whitesmoke;
+  text-align: center;
+  margin: 50px;
+}
+
+.portfolio .portfolio-box .box-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+
+footer i {
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
