@@ -22,7 +22,8 @@ section {
   margin: 24px auto 0 auto;
   padding: 16px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 500;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -37,25 +38,55 @@ section {
   right: 45%;
 }
 
+.frontpage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/1546333/pexels-photo-1546333.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+body p {
+  color: gray;
+}
+
+body h2 {
+  font-size: 40px;
+  padding: 10px 0 10px 0 !important;
+}
+
+body h4 {
+  font-size: 20px;
+}
+
 /* Navigation */
 .navigation {
   margin: 0 auto;
-  background: black;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: stretch;
+      align-items: stretch;
 }
 
 .navigation .container {
   width: 100%;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: stretch;
+      align-items: stretch;
 }
 
 .navigation h3 {
+  font-size: 30px;
+  font-family: 'Pacifico', cursive;
   color: goldenrod;
-  padding: 5px 10px 5px 15%;
+  padding: 20px 10px 20px 5%;
 }
 
 .navigation ul {
@@ -68,7 +99,7 @@ section {
   display: inline-block;
   margin-right: 36px;
   position: relative;
-  padding: 5px 10px 5px 10px;
+  padding: 40px 10px 20px 10px;
 }
 
 .navigation a {
@@ -80,12 +111,22 @@ section {
 .splash {
   height: 700px;
   width: 100%;
-  background-color: black;
   color: whitesmoke;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   text-align: center;
+}
+
+.splash .splash-inner .page-title {
+  font-size: 40px;
+}
+
+.splash .splash-inner .page-subtitle {
+  font-size: 80px;
 }
 
 /* Services */
@@ -99,7 +140,7 @@ section {
 }
 
 .services .serv-title {
-  padding-top: 72px;
+  padding-top: 120px !important;
   text-align: center;
 }
 
@@ -110,9 +151,12 @@ section {
 
 .services .serv-box {
   height: 80%;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   text-align: center;
   padding: 30px 30px 72px 30px;
 }
@@ -122,13 +166,14 @@ section {
 }
 
 .services .serv-box .service i {
-  font-size: 30px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  font-size: 40px;
+  width: 80px;
+  height: 80px;
+  line-height: 40px;
   color: goldenrod;
-  border: solid 2px goldenrod;
+  border: solid 5px goldenrod;
   border-radius: 50%;
+  margin-bottom: 25px;
 }
 
 /* Portfolio */
@@ -142,7 +187,7 @@ section {
 }
 
 .portfolio .container .portf-title {
-  padding-top: 72px;
+  padding-top: 120px !important;
   text-align: center;
 }
 
@@ -154,13 +199,17 @@ section {
 .portfolio .portfolio-box {
   height: 100%;
   width: 100%;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .portfolio .portfolio-box .row {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .portfolio .portfolio-box .box-img {
@@ -172,28 +221,122 @@ section {
 }
 
 .portfolio .portfolio-box .box-img img {
-  width: 300px;
+  width: 100%;
+  min-width: 240px;
   height: 300px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Footer */
 footer {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: start;
+      justify-content: start;
+  -ms-flex-align: center;
+      align-items: center;
   padding: 15px;
 }
 
 footer i {
-  font-size: 15px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   color: white;
   background-color: black;
   border-radius: 50%;
   text-align: center;
 }
 
+footer .icons {
+  padding: 0;
+}
+
+footer .icons a {
+  padding: 0 10px 0 10px;
+}
+
+footer h6 {
+  -ms-flex-direction: row;
+      flex-direction: row;
+  font-size: 15px;
+  padding: 0 250px 0 250px;
+}
+
+/* RWD */
+@media (max-width: 991px) {
+  .navigation .container {
+    display: block;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .navigation h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .navigation ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    text-align: center;
+    margin: 0;
+  }
+  .navigation ul li {
+    margin: 0;
+  }
+  .services .serv-box {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .services .serv-box .service {
+    width: 400px;
+  }
+  .portfolio-box {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .portfolio .portfolio-box .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .portfolio .portfolio-box .box-img {
+    width: 300px;
+  }
+  .portfolio .portfolio-box .box-img img {
+    width: 300px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+  }
+  footer .icons {
+    padding: 0 5px 0 5px;
+    line-height: 0;
+  }
+  footer .icons a {
+    padding: 10px 5px 10px 5px;
+  }
+  footer h6 {
+    padding: 10px 0 10px 0 !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
